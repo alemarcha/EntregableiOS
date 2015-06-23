@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0230C6781B39922C000DA67B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0230C6771B39922C000DA67B /* LoginViewController.m */; };
 		028464C71B38949B00DFB771 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 028464C61B38949B00DFB771 /* main.m */; };
 		028464CA1B38949B00DFB771 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 028464C91B38949B00DFB771 /* AppDelegate.m */; };
 		028464CD1B38949B00DFB771 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028464CC1B38949B00DFB771 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0230C6761B39922C000DA67B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0230C6771B39922C000DA67B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		028464C11B38949B00DFB771 /* EntregableAlexis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntregableAlexis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		028464C51B38949B00DFB771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		028464C61B38949B00DFB771 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				028464D11B38949B00DFB771 /* Images.xcassets */,
 				028464D31B38949B00DFB771 /* LaunchScreen.xib */,
 				028464C41B38949B00DFB771 /* Supporting Files */,
+				0230C6761B39922C000DA67B /* LoginViewController.h */,
+				0230C6771B39922C000DA67B /* LoginViewController.m */,
 			);
 			path = EntregableAlexis;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0230C6781B39922C000DA67B /* LoginViewController.m in Sources */,
 				028464CD1B38949B00DFB771 /* ViewController.m in Sources */,
 				028464CA1B38949B00DFB771 /* AppDelegate.m in Sources */,
 				028464C71B38949B00DFB771 /* main.m in Sources */,
@@ -416,6 +422,7 @@
 				028464E61B38949C00DFB771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		028464E71B38949C00DFB771 /* Build configuration list for PBXNativeTarget "EntregableAlexisTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				028464E91B38949C00DFB771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
