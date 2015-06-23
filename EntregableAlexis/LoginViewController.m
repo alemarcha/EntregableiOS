@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-
+#import "WeatherViewController.h"
 @interface LoginViewController ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,6 +35,44 @@
 }
 */
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex) {
+        case 0:
+        {
+            //this is the "Cancel"-Button
+            //do something
+        }
+            break;
+            
+        case 1:
+        {
+            //this is the "OK"-Button
+            //do something
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+}
+
 - (IBAction)onClickLoginButton:(id)sender {
+    if ([_userField.text length]>0)
+    {
+        NSLog(@"vamos");
+        [self performSegueWithIdentifier:@"seguerToWeather" sender:nil];
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle:@"Lo sentimos, el usuario y contraseña no son correctos"
+                              message:@"Intentelo de nuevo."
+                              delegate:self
+                              cancelButtonTitle:@"Aceptar"
+                              otherButtonTitles:nil,nil];
+        [alert show];
+    }
+   
+
 }
 @end

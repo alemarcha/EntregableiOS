@@ -13,12 +13,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="5dy-uJ-xUs" kind="relationship" relationship="rootViewController" id="kXn-FN-52B"/>
+                        <segue destination="5dy-uJ-xUs" kind="relationship" relationship="rootViewController" id="xQd-zf-cPZ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZi-Ix-pOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-896" y="138"/>
+            <point key="canvasLocation" x="-1179" y="-29"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="H3k-i7-dKQ">
@@ -32,17 +32,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XG3-g4-1mB">
-                                <rect key="frame" x="143" y="210" width="348" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="143" y="210" width="216" height="30"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="129" y="210" width="190" height="30"/>
-                                </variation>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcz-7l-T89">
                                 <rect key="frame" x="31" y="214" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -59,22 +48,6 @@
                                     <rect key="frame" x="31" y="292" width="90" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZ8-Ec-uw7">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Entrar">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="146" y="395" width="109" height="30"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="146" y="350" width="109" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="onClickLoginButton:" destination="5dy-uJ-xUs" eventType="touchUpInside" id="CBi-lg-JAW"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3qR-QC-vZp">
                                 <rect key="frame" x="143" y="293" width="348" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -86,6 +59,33 @@
                                     <rect key="frame" x="129" y="288" width="190" height="30"/>
                                 </variation>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XG3-g4-1mB">
+                                <rect key="frame" x="143" y="210" width="348" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="143" y="211" width="216" height="30"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="129" y="210" width="190" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZ8-Ec-uw7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="387" width="109" height="30"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="350" width="109" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onClickLoginButton:" destination="5dy-uJ-xUs" eventType="touchUpInside" id="CBi-lg-JAW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.15686275064945221" green="0.80000007152557373" blue="0.61568629741668701" alpha="1" colorSpace="deviceRGB"/>
                         <variation key="default">
@@ -102,11 +102,33 @@
                     <navigationItem key="navigationItem" id="kSg-Ye-xLQ"/>
                     <connections>
                         <outlet property="loginButton" destination="HZ8-Ec-uw7" id="zL5-bF-Pia"/>
+                        <outlet property="passField" destination="3qR-QC-vZp" id="axL-5y-DYz"/>
+                        <outlet property="userField" destination="XG3-g4-1mB" id="kBB-4G-QBD"/>
+                        <segue destination="i5w-dJ-aht" kind="push" identifier="seguerToWeather" id="qGY-Kc-5qr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pei-Wa-TS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76.5" y="145.5"/>
+            <point key="canvasLocation" x="-58.5" y="-71"/>
+        </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="FAS-85-Bfn">
+            <objects>
+                <viewController id="i5w-dJ-aht" customClass="WeatherViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bV8-ay-Jka"/>
+                        <viewControllerLayoutGuide type="bottom" id="iA5-b6-JVZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Oa-Lr-ZUO" customClass="Weather">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.15686275059999999" green="0.80000007149999997" blue="0.61568629740000003" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PcF-G3-H01"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bP-pJ-N9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="-71"/>
         </scene>
     </scenes>
 </document>
