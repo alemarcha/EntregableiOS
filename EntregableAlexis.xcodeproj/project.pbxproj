@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0230C6781B39922C000DA67B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0230C6771B39922C000DA67B /* LoginViewController.m */; };
-		023F09B51B3A098C0093EB1A /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023F09B41B3A098C0093EB1A /* WeatherViewController.m */; };
 		028464C71B38949B00DFB771 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 028464C61B38949B00DFB771 /* main.m */; };
 		028464CA1B38949B00DFB771 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 028464C91B38949B00DFB771 /* AppDelegate.m */; };
 		028464CD1B38949B00DFB771 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028464CC1B38949B00DFB771 /* ViewController.m */; };
@@ -16,6 +15,7 @@
 		028464D21B38949B00DFB771 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028464D11B38949B00DFB771 /* Images.xcassets */; };
 		028464D51B38949B00DFB771 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 028464D31B38949B00DFB771 /* LaunchScreen.xib */; };
 		028464E11B38949C00DFB771 /* EntregableAlexisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 028464E01B38949C00DFB771 /* EntregableAlexisTests.m */; };
+		029745931B3B2854003336C8 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023F09B41B3A098C0093EB1A /* WeatherViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +178,7 @@
 				TargetAttributes = {
 					028464C01B38949B00DFB771 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = DWZ77GEEBY;
 					};
 					028464D91B38949C00DFB771 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -232,7 +233,7 @@
 				0230C6781B39922C000DA67B /* LoginViewController.m in Sources */,
 				028464CD1B38949B00DFB771 /* ViewController.m in Sources */,
 				028464CA1B38949B00DFB771 /* AppDelegate.m in Sources */,
-				023F09B51B3A098C0093EB1A /* WeatherViewController.m in Sources */,
+				029745931B3B2854003336C8 /* WeatherViewController.m in Sources */,
 				028464C71B38949B00DFB771 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EntregableAlexis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EntregableAlexis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

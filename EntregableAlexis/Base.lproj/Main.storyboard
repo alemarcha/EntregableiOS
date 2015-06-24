@@ -208,9 +208,42 @@
                     <view key="view" contentMode="scaleToFill" id="9Oa-Lr-ZUO" customClass="Weather">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NzZ-UN-FZV">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="117" width="400" height="162"/>
+                                </variation>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" red="0.15686275059999999" green="0.80000007149999997" blue="0.61568629740000003" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="NzZ-UN-FZV" secondAttribute="centerX" id="2Ty-Xp-ywx"/>
+                            <constraint firstAttribute="centerY" secondItem="NzZ-UN-FZV" secondAttribute="centerY" constant="102" id="ycu-k0-Cbo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NzZ-UN-FZV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2Ty-Xp-ywx"/>
+                                <exclude reference="ycu-k0-Cbo"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NzZ-UN-FZV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2Ty-Xp-ywx"/>
+                                <include reference="ycu-k0-Cbo"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="PcF-G3-H01"/>
+                    <connections>
+                        <outlet property="pickerCity" destination="NzZ-UN-FZV" id="eIl-T6-Jyk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bP-pJ-N9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

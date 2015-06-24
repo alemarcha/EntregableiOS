@@ -14,6 +14,9 @@
 
 @implementation WeatherViewController
 
+
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -23,6 +26,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   dataArray = [[NSArray alloc] initWithObjects:@"Madrid,es",@"Seville,es",@"London,uk",@"Paris,fr",@"Berlin,de",nil];
+
+    _pickerCity.dataSource=self;
+    
+    
+    _pickerCity.delegate = self;
     // Do any additional setup after loading the view.
 }
 
@@ -31,14 +40,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
 }
-*/
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [dataArray count];
+}
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [dataArray objectAtIndex:row];
+}
+
 
 @end

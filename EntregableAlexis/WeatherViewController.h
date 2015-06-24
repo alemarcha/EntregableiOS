@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WeatherViewController : UIViewController
+@interface WeatherViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
+{
+NSArray *dataArray;
+}
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerCity;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 @end
