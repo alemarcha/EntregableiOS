@@ -59,9 +59,8 @@
 }
 
 - (IBAction)onClickLoginButton:(id)sender {
-    if ([_userField.text length]>0)
+    if ([_userField.text length]>0 && [_passField.text length]>0)
     {
-        NSLog(@"vamos");
         [self performSegueWithIdentifier:@"seguerToWeather" sender:nil];
     }else{
         UIAlertView *alert = [[UIAlertView alloc]

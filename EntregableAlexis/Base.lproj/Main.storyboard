@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sym-xa-FPI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -32,42 +33,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcz-7l-T89">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcz-7l-T89">
                                 <rect key="frame" x="31" y="214" width="90" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="FdR-ww-fpJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FdR-ww-fpJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="FdR-ww-fpJ"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mh2-RA-L1N">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mh2-RA-L1N">
                                 <rect key="frame" x="31" y="297" width="90" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="xj7-PS-eeC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xj7-PS-eeC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="31" y="292" width="90" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="xj7-PS-eeC"/>
+                                    </mask>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3qR-QC-vZp">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3qR-QC-vZp">
                                 <rect key="frame" x="143" y="293" width="348" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="cIM-iQ-WY1">
+                                        <variation key="widthClass=compact" constant="180"/>
+                                    </constraint>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="143" y="288" width="216" height="30"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cIM-iQ-WY1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="146" y="285" width="216" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="cIM-iQ-WY1"/>
+                                    </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="129" y="288" width="190" height="30"/>
-                                </variation>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XG3-g4-1mB">
-                                <rect key="frame" x="143" y="210" width="348" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="143" y="211" width="216" height="30"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="129" y="210" width="190" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZ8-Ec-uw7">
@@ -76,9 +103,6 @@
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="146" y="387" width="109" height="30"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="146" y="350" width="109" height="30"/>
                                 </variation>
@@ -86,16 +110,78 @@
                                     <action selector="onClickLoginButton:" destination="5dy-uJ-xUs" eventType="touchUpInside" id="CBi-lg-JAW"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XG3-g4-1mB">
+                                <rect key="frame" x="143" y="210" width="348" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="cd8-YH-LCR">
+                                        <variation key="widthClass=compact" constant="180"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cd8-YH-LCR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="146" y="211" width="216" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="cd8-YH-LCR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="129" y="210" width="190" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.15686275064945221" green="0.80000007152557373" blue="0.61568629741668701" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bcz-7l-T89" firstAttribute="leading" secondItem="sda-lt-421" secondAttribute="leadingMargin" constant="5" id="4oY-ah-ZBS">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="3qR-QC-vZp" secondAttribute="centerY" id="4sn-oQ-Qc5"/>
+                            <constraint firstItem="XG3-g4-1mB" firstAttribute="leading" secondItem="Bcz-7l-T89" secondAttribute="trailing" constant="10" id="6C1-va-12L"/>
+                            <constraint firstAttribute="centerX" secondItem="HZ8-Ec-uw7" secondAttribute="centerX" id="AR8-3o-Nz0"/>
+                            <constraint firstAttribute="centerY" secondItem="Bcz-7l-T89" secondAttribute="centerY" constant="75.5" id="LHa-Ww-A2D"/>
+                            <constraint firstAttribute="centerY" secondItem="XG3-g4-1mB" secondAttribute="centerY" constant="74" id="RXg-G4-qiu"/>
+                            <constraint firstAttribute="centerY" secondItem="HZ8-Ec-uw7" secondAttribute="centerY" constant="-102" id="T3B-kI-orl"/>
+                            <constraint firstItem="3qR-QC-vZp" firstAttribute="leading" secondItem="mh2-RA-L1N" secondAttribute="trailing" constant="10" id="aNP-rF-6tf"/>
+                            <constraint firstItem="mh2-RA-L1N" firstAttribute="leading" secondItem="sda-lt-421" secondAttribute="leadingMargin" constant="10" id="rV7-CC-tOc"/>
+                            <constraint firstAttribute="centerY" secondItem="mh2-RA-L1N" secondAttribute="centerY" constant="-2.5" id="xnc-QY-b1K"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="HZ8-Ec-uw7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="AR8-3o-Nz0"/>
+                                <exclude reference="T3B-kI-orl"/>
+                                <exclude reference="4oY-ah-ZBS"/>
+                                <exclude reference="LHa-Ww-A2D"/>
+                                <exclude reference="6C1-va-12L"/>
+                                <exclude reference="RXg-G4-qiu"/>
+                                <exclude reference="rV7-CC-tOc"/>
+                                <exclude reference="xnc-QY-b1K"/>
+                                <exclude reference="4sn-oQ-Qc5"/>
+                                <exclude reference="aNP-rF-6tf"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="HZ8-Ec-uw7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="AR8-3o-Nz0"/>
+                                <include reference="T3B-kI-orl"/>
+                                <include reference="4oY-ah-ZBS"/>
+                                <include reference="LHa-Ww-A2D"/>
+                                <include reference="6C1-va-12L"/>
+                                <include reference="RXg-G4-qiu"/>
+                                <include reference="rV7-CC-tOc"/>
+                                <include reference="xnc-QY-b1K"/>
+                                <include reference="4sn-oQ-Qc5"/>
+                                <include reference="aNP-rF-6tf"/>
                             </mask>
                         </variation>
                     </view>
@@ -104,7 +190,7 @@
                         <outlet property="loginButton" destination="HZ8-Ec-uw7" id="zL5-bF-Pia"/>
                         <outlet property="passField" destination="3qR-QC-vZp" id="axL-5y-DYz"/>
                         <outlet property="userField" destination="XG3-g4-1mB" id="kBB-4G-QBD"/>
-                        <segue destination="i5w-dJ-aht" kind="push" identifier="seguerToWeather" id="qGY-Kc-5qr"/>
+                        <segue destination="i5w-dJ-aht" kind="show" identifier="seguerToWeather" id="qGY-Kc-5qr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pei-Wa-TS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
