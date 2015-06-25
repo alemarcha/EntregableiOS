@@ -13,6 +13,9 @@
 NSArray *dataArray;
 }
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerCity;
+@property (weak, nonatomic) IBOutlet UILabel *windDirection;
+@property (weak, nonatomic) IBOutlet UILabel *windSpeed;
+@property (weak, nonatomic) IBOutlet UILabel *temperature;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 @end

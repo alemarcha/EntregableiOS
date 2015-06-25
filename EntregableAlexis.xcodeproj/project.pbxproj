@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0230C6781B39922C000DA67B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0230C6771B39922C000DA67B /* LoginViewController.m */; };
+		023F5B961B3C333C007C9D3D /* TiempoAtmosferico.m in Sources */ = {isa = PBXBuildFile; fileRef = 023F5B951B3C333C007C9D3D /* TiempoAtmosferico.m */; };
 		028464C71B38949B00DFB771 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 028464C61B38949B00DFB771 /* main.m */; };
 		028464CA1B38949B00DFB771 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 028464C91B38949B00DFB771 /* AppDelegate.m */; };
 		028464CD1B38949B00DFB771 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028464CC1B38949B00DFB771 /* ViewController.m */; };
@@ -33,6 +34,8 @@
 		0230C6771B39922C000DA67B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		023F09B31B3A098C0093EB1A /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
 		023F09B41B3A098C0093EB1A /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
+		023F5B941B3C333C007C9D3D /* TiempoAtmosferico.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiempoAtmosferico.h; sourceTree = "<group>"; };
+		023F5B951B3C333C007C9D3D /* TiempoAtmosferico.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiempoAtmosferico.m; sourceTree = "<group>"; };
 		028464C11B38949B00DFB771 /* EntregableAlexis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntregableAlexis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		028464C51B38949B00DFB771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		028464C61B38949B00DFB771 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				0230C6771B39922C000DA67B /* LoginViewController.m */,
 				023F09B31B3A098C0093EB1A /* WeatherViewController.h */,
 				023F09B41B3A098C0093EB1A /* WeatherViewController.m */,
+				023F5B941B3C333C007C9D3D /* TiempoAtmosferico.h */,
+				023F5B951B3C333C007C9D3D /* TiempoAtmosferico.m */,
 			);
 			path = EntregableAlexis;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023F5B961B3C333C007C9D3D /* TiempoAtmosferico.m in Sources */,
 				0230C6781B39922C000DA67B /* LoginViewController.m in Sources */,
 				028464CD1B38949B00DFB771 /* ViewController.m in Sources */,
 				028464CA1B38949B00DFB771 /* AppDelegate.m in Sources */,
