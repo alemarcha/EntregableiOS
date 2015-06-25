@@ -12,10 +12,13 @@
 {
 NSArray *dataArray;
 }
+
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerCity;
-@property (weak, nonatomic) IBOutlet UILabel *windDirection;
 @property (weak, nonatomic) IBOutlet UILabel *windSpeed;
 @property (weak, nonatomic) IBOutlet UILabel *temperature;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionWeather;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
+- (void) executeCallWSWeather:(NSString *)query;
 @end

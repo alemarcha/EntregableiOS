@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface TiempoAtmosferico : NSObject
-@property(copy, nonatomic) NSString *name;
-@property(copy, nonatomic) NSString *cod;
+@property(copy, nonatomic) NSString *temp;
+@property(copy, nonatomic) NSString *windSpeed;
+@property(copy, nonatomic) NSString *descriptionWeather;
 -(instancetype)initWithDictionary:(NSDictionary *)dict;
 @end

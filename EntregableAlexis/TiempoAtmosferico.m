@@ -14,9 +14,12 @@
 {
     self = [super init];
     if (self) {
-        self.name=[NSString stringWithFormat:@"%@",[dict valueForKeyPath:@"name"]];
-        self.cod=[NSString stringWithFormat:@"%@",[dict valueForKeyPath:@"cod"]];
 
+        NSArray *weatherValues = [dict valueForKey:@"weather"];
+        self.descriptionWeather=[NSString stringWithFormat:@"%@",[weatherValues[0] valueForKeyPath:@"description"]];
+        self.temp=[NSString stringWithFormat:@"%@",[dict valueForKeyPath:@"main.temp"]];
+        self.windSpeed=[NSString stringWithFormat:@"%@",[dict valueForKeyPath:@"wind.speed"]];
+        
     }
     return self;
 }

@@ -27,12 +27,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   dataArray = [[NSArray alloc] initWithObjects:@"Madrid,es",@"Seville,es",@"London,uk",@"Paris,fr",@"Berlin,de",nil];
-
+    dataArray = [[NSArray alloc] initWithObjects:@"Madrid,es",@"Seville,es",@"London,uk",@"Paris,fr",@"Berlin,de",@"Tarifa,es",nil];
+    
     _pickerCity.dataSource=self;
     
     
     _pickerCity.delegate = self;
+    [self executeCallWSWeather:@"Madrid,es"];
     // Do any additional setup after loading the view.
 }
 
@@ -59,9 +60,16 @@
 {
     // This method is triggered whenever the user makes a change to the picker selection.
     // The parameter named row and component represents what was selected.
-    NSMutableString *urlString=[[NSMutableString alloc]initWithString:@"http://api.openweathermap.org/data/2.5/weather?q="];
     NSString *valor=dataArray[row];
-    [urlString appendString:valor];
+    [self executeCallWSWeather:valor];
+}
+
+- (void) executeCallWSWeather:(NSString *)query{
+    // This method is triggered whenever the user makes a change to the picker selection.
+    // The parameter named row and component represents what was selected.
+    NSMutableString *urlString=[[NSMutableString alloc]initWithString:@"http://api.openweathermap.org/data/2.5/weather?q="];
+
+    [urlString appendString:query];
     NSURL *url= [NSURL URLWithString:urlString];
     NSURLRequest *req=[NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:req queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
@@ -69,14 +77,16 @@
         if(data.length>0 && connectionError== nil){
             NSDictionary *weatherInfo= [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
             NSLog(@"%@",weatherInfo);
-
-                TiempoAtmosferico *exhibit = [[TiempoAtmosferico alloc] initWithDictionary:weatherInfo];
-
             
-
+            TiempoAtmosferico *exhibit = [[TiempoAtmosferico alloc] initWithDictionary:weatherInfo];
             
-            [_windDirection setText:[exhibit name]];
-                        [_windSpeed setText:[exhibit cod]];
+            
+            
+            NSInteger tempe=[exhibit.temp integerValue];
+            tempe=tempe-273.15;
+            [_temperature setText:[NSString stringWithFormat:@"%i",tempe]];
+            [_windSpeed setText:[exhibit windSpeed]];
+            [_descriptionWeather setText:[exhibit descriptionWeather]];
             
         }
     }];

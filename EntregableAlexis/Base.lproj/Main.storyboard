@@ -209,85 +209,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-q8-DSf">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="135" y="431" width="132" height="21"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xm-d1-7ov">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="179" y="478" width="42" height="21"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="179" y="471" width="42" height="21"/>
                                 </variation>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NzZ-UN-FZV">
                                 <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="40" y="90" width="320" height="216"/>
+                                </variation>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYQ-DQ-AYz">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="179" y="332" width="42" height="21"/>
+                                </variation>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sI4-et-q9L">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="118" y="377" width="164" height="21"/>
+                                    <rect key="frame" x="179" y="404" width="42" height="20.5"/>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.15686275059999999" green="0.80000007149999997" blue="0.61568629740000003" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="sI4-et-q9L" secondAttribute="centerX" id="1qN-Nu-MzH"/>
+                            <constraint firstItem="NYQ-DQ-AYz" firstAttribute="top" secondItem="NzZ-UN-FZV" secondAttribute="bottom" constant="40" id="1BX-hr-86q"/>
                             <constraint firstAttribute="centerX" secondItem="NzZ-UN-FZV" secondAttribute="centerX" id="2Ty-Xp-ywx"/>
-                            <constraint firstAttribute="centerY" secondItem="sI4-et-q9L" secondAttribute="centerY" constant="-89.5" id="RCa-pT-mhK"/>
-                            <constraint firstAttribute="centerY" secondItem="B6C-q8-DSf" secondAttribute="centerY" constant="-141.5" id="a7I-Dq-jsz"/>
+                            <constraint firstAttribute="centerX" secondItem="sI4-et-q9L" secondAttribute="centerX" id="GCD-j8-Mgo"/>
+                            <constraint firstAttribute="centerX" secondItem="NYQ-DQ-AYz" secondAttribute="centerX" id="Guu-Rm-NIO"/>
+                            <constraint firstItem="sI4-et-q9L" firstAttribute="top" secondItem="NYQ-DQ-AYz" secondAttribute="bottom" constant="40" id="fqU-sw-hWD"/>
+                            <constraint firstItem="3xm-d1-7ov" firstAttribute="top" secondItem="sI4-et-q9L" secondAttribute="bottom" constant="40" id="obe-mD-Mlg"/>
+                            <constraint firstAttribute="centerX" secondItem="3xm-d1-7ov" secondAttribute="centerX" id="van-xi-DrM"/>
                             <constraint firstAttribute="centerY" secondItem="NzZ-UN-FZV" secondAttribute="centerY" constant="102" id="ycu-k0-Cbo"/>
-                            <constraint firstAttribute="centerX" secondItem="B6C-q8-DSf" secondAttribute="centerX" id="ydA-Te-dgK"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="B6C-q8-DSf"/>
                                 <exclude reference="3xm-d1-7ov"/>
                                 <exclude reference="NzZ-UN-FZV"/>
+                                <exclude reference="NYQ-DQ-AYz"/>
                                 <exclude reference="sI4-et-q9L"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2Ty-Xp-ywx"/>
                                 <exclude reference="ycu-k0-Cbo"/>
-                                <exclude reference="1qN-Nu-MzH"/>
-                                <exclude reference="RCa-pT-mhK"/>
-                                <exclude reference="a7I-Dq-jsz"/>
-                                <exclude reference="ydA-Te-dgK"/>
+                                <exclude reference="1BX-hr-86q"/>
+                                <exclude reference="Guu-Rm-NIO"/>
+                                <exclude reference="GCD-j8-Mgo"/>
+                                <exclude reference="fqU-sw-hWD"/>
+                                <exclude reference="obe-mD-Mlg"/>
+                                <exclude reference="van-xi-DrM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="B6C-q8-DSf"/>
                                 <include reference="3xm-d1-7ov"/>
                                 <include reference="NzZ-UN-FZV"/>
+                                <include reference="NYQ-DQ-AYz"/>
                                 <include reference="sI4-et-q9L"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2Ty-Xp-ywx"/>
                                 <include reference="ycu-k0-Cbo"/>
-                                <include reference="1qN-Nu-MzH"/>
-                                <include reference="RCa-pT-mhK"/>
-                                <include reference="a7I-Dq-jsz"/>
-                                <include reference="ydA-Te-dgK"/>
+                                <include reference="1BX-hr-86q"/>
+                                <include reference="Guu-Rm-NIO"/>
+                                <include reference="GCD-j8-Mgo"/>
+                                <include reference="fqU-sw-hWD"/>
+                                <include reference="obe-mD-Mlg"/>
+                                <include reference="van-xi-DrM"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="PcF-G3-H01"/>
                     <connections>
+                        <outlet property="descriptionWeather" destination="NYQ-DQ-AYz" id="TdZ-MS-bUT"/>
                         <outlet property="pickerCity" destination="NzZ-UN-FZV" id="eIl-T6-Jyk"/>
                         <outlet property="temperature" destination="3xm-d1-7ov" id="pg9-9q-RZb"/>
-                        <outlet property="windDirection" destination="sI4-et-q9L" id="I3X-8Z-kLn"/>
-                        <outlet property="windSpeed" destination="B6C-q8-DSf" id="huL-ft-Phu"/>
+                        <outlet property="windSpeed" destination="sI4-et-q9L" id="3G9-ca-ExE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bP-pJ-N9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
