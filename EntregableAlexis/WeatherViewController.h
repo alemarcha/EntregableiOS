@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TiempoAtmosferico.h"
 
 @interface WeatherViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
 {
@@ -17,7 +18,7 @@ NSArray *dataArray;
 @property (weak, nonatomic) IBOutlet UILabel *windSpeed;
 @property (weak, nonatomic) IBOutlet UILabel *temperature;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionWeather;
-
+@property TiempoAtmosferico *exhibit;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 - (void) executeCallWSWeather:(NSString *)query;

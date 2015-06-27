@@ -16,6 +16,7 @@
 		028464D21B38949B00DFB771 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028464D11B38949B00DFB771 /* Images.xcassets */; };
 		028464D51B38949B00DFB771 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 028464D31B38949B00DFB771 /* LaunchScreen.xib */; };
 		028464E11B38949C00DFB771 /* EntregableAlexisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 028464E01B38949C00DFB771 /* EntregableAlexisTests.m */; };
+		02926EC81B3DAD780009C598 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02926EC71B3DAD780009C598 /* MapViewController.m */; };
 		029745931B3B2854003336C8 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023F09B41B3A098C0093EB1A /* WeatherViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		028464DA1B38949C00DFB771 /* EntregableAlexisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntregableAlexisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		028464DF1B38949C00DFB771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		028464E01B38949C00DFB771 /* EntregableAlexisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntregableAlexisTests.m; sourceTree = "<group>"; };
+		02926EC61B3DAD780009C598 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		02926EC71B3DAD780009C598 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				023F09B41B3A098C0093EB1A /* WeatherViewController.m */,
 				023F5B941B3C333C007C9D3D /* TiempoAtmosferico.h */,
 				023F5B951B3C333C007C9D3D /* TiempoAtmosferico.m */,
+				02926EC61B3DAD780009C598 /* MapViewController.h */,
+				02926EC71B3DAD780009C598 /* MapViewController.m */,
 			);
 			path = EntregableAlexis;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				028464CA1B38949B00DFB771 /* AppDelegate.m in Sources */,
 				029745931B3B2854003336C8 /* WeatherViewController.m in Sources */,
 				028464C71B38949B00DFB771 /* main.m in Sources */,
+				02926EC81B3DAD780009C598 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

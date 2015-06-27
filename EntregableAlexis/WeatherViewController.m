@@ -8,6 +8,7 @@
 
 #import "WeatherViewController.h"
 #import "TiempoAtmosferico.h"
+#import "MapViewController.h"
 
 @interface WeatherViewController ()
 
@@ -78,18 +79,35 @@
             NSDictionary *weatherInfo= [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
             NSLog(@"%@",weatherInfo);
             
-            TiempoAtmosferico *exhibit = [[TiempoAtmosferico alloc] initWithDictionary:weatherInfo];
+            _exhibit = [[TiempoAtmosferico alloc] initWithDictionary:weatherInfo];
             
             
             
-            NSInteger tempe=[exhibit.temp integerValue];
+            NSInteger tempe=[_exhibit.temp integerValue];
             tempe=tempe-273.15;
             [_temperature setText:[NSString stringWithFormat:@"%i",tempe]];
-            [_windSpeed setText:[exhibit windSpeed]];
-            [_descriptionWeather setText:[exhibit descriptionWeather]];
+            [_windSpeed setText:[_exhibit windSpeed]];
+            [_descriptionWeather setText:[_exhibit descriptionWeather]];
             
         }
     }];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    MapViewController *mapViewController = segue.destinationViewController;
+    
+    if([segue.identifier isEqualToString:@"segueToMap"])
+    {
+        NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+        f.numberStyle = NSNumberFormatterDecimalStyle;
+        NSNumber *lat = [f numberFromString:_exhibit.latitude];
+        NSNumber *longi = [f numberFromString:_exhibit.longitude];
+        
+        [mapViewController setLatitude:lat];
+        [mapViewController setLongitude:longi];
+    }
+    
 }
 
 

@@ -12,5 +12,7 @@
 @property(copy, nonatomic) NSString *temp;
 @property(copy, nonatomic) NSString *windSpeed;
 @property(copy, nonatomic) NSString *descriptionWeather;
+@property(copy, nonatomic) NSString *latitude;
+@property(copy, nonatomic) NSString *longitude;
 -(instancetype)initWithDictionary:(NSDictionary *)dict;
 @end
